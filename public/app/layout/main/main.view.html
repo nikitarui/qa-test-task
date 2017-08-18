@@ -1,0 +1,7 @@
+<section id="main">
+    <h1>Main</h1>
+    {{ main.user }}
+
+	<button ng-click="main.logout()">Logout</button>
+    <span id="fail-msg" ng-if="main.failMessage">{{main.failMessage}}</span>
+</section>

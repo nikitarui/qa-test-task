@@ -1,0 +1,16 @@
+#login-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#fail-msg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em 2em;
+    margin: .5em;
+    background: #ff5b6a;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 5px 25px 0px rgba(255, 91, 106, 0.55);
+}
