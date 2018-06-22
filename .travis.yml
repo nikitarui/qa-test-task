@@ -1,13 +1,9 @@
 sudo: required
 
-language: node_js
-
 services:
   - docker
 
 before_install:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-
-script:
   - docker build -t "$DOCKER_USERNAME"/test
   - docker push "$DOCKER_USERNAME"/test
